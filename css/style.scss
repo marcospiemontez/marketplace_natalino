@@ -453,10 +453,9 @@ section {
     max-width: 60rem;
     text-align: center;
 
-    h3{
+    h3 {
       @include title-text(3rem);
       margin-bottom: 1rem;
-
     }
 
     .box {
@@ -468,8 +467,71 @@ section {
       font-size: 1.8rem;
       background: none;
 
-      &:focus{
+      &:focus {
         border-color: $blue;
+      }
+    }
+  }
+}
+
+.blogs {
+  .box-container {
+    @include grid(31rem);
+
+    .box {
+      text-align: center;
+
+      &:hover {
+        .images img {
+          transform: scale(1.1);
+        }
+      }
+
+      .images {
+        height: 25rem;
+        overflow: hidden;
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .content {
+        padding-top: 2rem;
+
+        h3 {
+          @include title-text(2rem);
+        }
+
+        p {
+          @include graph-text(1.6rem);
+          padding: 1rem 2rem;
+        }
+
+        .icons{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 2rem;
+          background-color: $light-bg;
+          margin-top: 2rem;
+
+          a{
+            font-size: 1.5rem;
+            color: $white;
+
+            i{
+              color: $blue;
+              padding-right: .5rem;
+            }
+
+            &:hover{
+              color: $blue;
+            }
+          }
+        }
       }
     }
   }
