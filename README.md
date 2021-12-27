@@ -1,7 +1,7 @@
 # marketplace_natalino
 
 
-### Design de site de comércio eletrônico animado e responsivo completo usando html css / sass e javascript do zero.
+### Design de site de comércio eletrônico animado e responsivo completo usando html css / sass e javascript.
 
 
 #### O que veremos neste site:
