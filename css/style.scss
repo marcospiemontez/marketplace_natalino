@@ -434,6 +434,20 @@ section {
     }
 }
 
+.gallery{
+
+    .box-container{
+        columns: 25rem 3;
+        gap: 1.5rem;
+
+        img{
+            width: 100%;
+            border-radius: .5rem;
+            margin-bottom: 1.5rem;
+        }
+    }
+}
+
 // media queries
 
 @media (max-width: 1200px) {
