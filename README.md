@@ -6,8 +6,8 @@
 
 #### O que veremos neste site:
 
-- [x] Seção de cabeçalho responsiva com ícone de pesquisa e alternador de menu usando vanilla javascript.
-- [x] Seção inicial responsiva com efeito de rolagem paralaxe usando vanilla javascript.
+- [x] Seção de cabeçalho responsiva com ícone de pesquisa e alternador de menu usando javascript.
+- [x] Seção inicial responsiva com efeito de rolagem paralaxe usando javascript.
 - [x] Responsivo sobre a seção usando flexbox.
 - [x] Seção de produtos responsivos usando grid.
 - [x] Seção de serviços responsivos usando grid.
