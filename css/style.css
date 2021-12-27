@@ -57,6 +57,19 @@ section {
   color: #000;
 }
 
+.heading {
+  text-align: center;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.heading span {
+  color: #0097e6;
+  text-transform: uppercase;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -310,8 +323,102 @@ section {
   padding: 1.5rem 0;
 }
 
-body {
-  height: 300rem;
+.products .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+
+.products .box-container .box {
+  text-align: center;
+}
+
+.products .box-container .box:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.products .box-container .box:hover .image .icons {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.products .box-container .box .image {
+  height: 30rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.products .box-container .box .image img {
+  height: 100%;
+}
+
+.products .box-container .box .image .icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.5rem;
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+
+.products .box-container .box .image .icons a {
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+  background: #fff;
+  color: #000;
+}
+
+.products .box-container .box .image .icons a:hover {
+  background: #0097e6;
+  color: #fff;
+}
+
+.products .box-container .box .content {
+  padding: 1.5rem 0;
+}
+
+.products .box-container .box .content .stars {
+  padding-bottom: 0.5rem;
+}
+
+.products .box-container .box .content .stars i {
+  font-size: 1.7rem;
+  color: #0097e6;
+}
+
+.products .box-container .box .content h3 {
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.products .box-container .box .content .price {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.products .box-container .box .content .price span {
+  color: #aaa;
+  font-size: 1.5rem;
+  text-decoration: line-through;
 }
 
 @media (max-width: 1200px) {

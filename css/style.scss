@@ -66,20 +66,31 @@ section {
   padding: 3rem 9%;
 }
 
-.btn{
+.btn {
   display: inline-block;
   margin-top: 1rem;
   padding: 1rem 3rem;
   background: $blue;
   color: $white;
-  cursor: pointer;  
+  cursor: pointer;
   font-style: italic;
   font-size: 1.8rem;
 
-  &:hover{
+  &:hover {
     background: $white;
     color: $black;
   }
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 3rem;
+    @include title-text(3rem);
+
+    span{
+        color: $blue;
+        text-transform: uppercase;
+    }
 }
 
 .header {
@@ -278,25 +289,108 @@ section {
 
   .content {
     flex: 1 1 42rem;
-    
-    span{
-        font-size: 2rem;
-        color: $blue;
+
+    span {
+      font-size: 2rem;
+      color: $blue;
     }
 
-    h3{
-        @include title-text(3.5rem);
-        padding-top: 1.5rem;
+    h3 {
+      @include title-text(3.5rem);
+      padding-top: 1.5rem;
     }
 
-    p{
-        @include graph-text(1.6rem);
+    p {
+      @include graph-text(1.6rem);
     }
   }
 }
 
-body {
-  height: 300rem;
+.products {
+  .box-container {
+    @include grid(31rem);
+
+    .box {
+      text-align: center;
+
+      &:hover .image {
+        img {
+          transform: scale(1.1);
+        }
+
+        .icons {
+          transform: translateY(0);
+        }
+      }
+
+      .image {
+        height: 30rem;
+        position: relative;
+        overflow: hidden;
+
+        img {
+          height: 100%;
+        }
+
+        .icons {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          width: 100%;
+          background: rgba(0, 0, 0, 0.7);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 0.5rem;
+          transform: translateY(-100%);
+
+          a {
+            height: 5rem;
+            width: 5rem;
+            line-height: 5rem;
+            font-size: 2rem;
+            background: $white;
+            color: $black;
+
+            &:hover {
+              background: $blue;
+              color: $white;
+            }
+          }
+        }
+      }
+
+      .content {
+        padding: 1.5rem 0;
+
+        .stars {
+          padding-bottom: 0.5rem;
+
+          i {
+            font-size: 1.7rem;
+            color: $blue;
+          }
+        }
+
+        h3 {
+          padding: 1rem 0;
+          @include title-text(2rem);
+        }
+
+        .price {
+          font-size: 2rem;
+          color: $white;
+
+          span {
+            color: $light-color;
+            font-size: 1.5rem;
+            text-decoration: line-through;
+          }
+        }
+      }
+    }
+  }
 }
 
 // media queries
