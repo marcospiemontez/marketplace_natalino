@@ -393,6 +393,47 @@ section {
   }
 }
 
+.services{
+    .box-container{
+        @include grid(31rem);
+
+        .box{
+            text-align: center;
+            padding: 3rem;
+            cursor: pointer;
+
+            &:nth-child(even){
+                background: $light-bg;
+                border-radius: .5rem;
+            }
+
+            &:hover i{
+                transform: translateY(-1rem);
+            }
+            
+            i{
+                height: 6rem;
+                width: 6rem;
+                line-height: 6rem;
+                border-radius: 50%;
+                font-size: 2rem;
+                color: $white;
+                background: $blue;
+                margin-bottom: 1rem;
+            }
+
+            h3{
+               @include title-text(2rem);
+            }
+
+            p{
+                @include graph-text(1.6rem);
+                padding-bottom: 0;
+            }
+        }
+    }
+}
+
 // media queries
 
 @media (max-width: 1200px) {
