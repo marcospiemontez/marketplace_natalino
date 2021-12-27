@@ -253,7 +253,6 @@ section {
   color: #fff;
   text-transform: capitalize;
   text-transform: uppercase;
-  text-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.7);
 }
 
 .home .content h3 {
@@ -582,6 +581,90 @@ section {
 }
 
 .blogs .box-container .box .content .icons a:hover {
+  color: #0097e6;
+}
+
+.footer {
+  background-color: #0a0a0a;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #fff;
+  text-transform: capitalize;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+}
+
+.footer .box-container .box .link {
+  display: block;
+  color: #aaa;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.footer .box-container .box .link i {
+  color: #0097e6;
+  padding-right: .5rem;
+}
+
+.footer .box-container .box .link:hover {
+  color: #0097e6;
+}
+
+.footer .box-container .box .link:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box .email {
+  width: 100%;
+  padding: 1.2rem 1.4rem;
+  border: 0.1rem solid rgba(255, 255, 255, 0.2);
+  color: #fff;
+  margin: 1rem 0;
+  background: none;
+  font-size: 1.6rem;
+}
+
+.footer .box-container .box .share {
+  margin-top: 2rem;
+}
+
+.footer .box-container .box .share a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 2rem;
+  background-color: #fff;
+  color: #000;
+  margin-right: .5rem;
+  text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+  background-color: #0097e6;
+  color: #fff;
+}
+
+.footer .credit {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: capitalize;
+  padding-top: 2rem;
+  margin-top: 3rem;
+  border-top: 0.1rem solid rgba(255, 255, 255, 0.2);
+}
+
+.footer .credit span {
   color: #0097e6;
 }
 

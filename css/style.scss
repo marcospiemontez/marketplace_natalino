@@ -251,7 +251,6 @@ section {
     p {
       @include title-text(3rem);
       text-transform: uppercase;
-      text-shadow: 0.5rem 1rem rgba(0, 0, 0, 0.7);
     }
 
     h3 {
@@ -533,6 +532,85 @@ section {
           }
         }
       }
+    }
+  }
+}
+
+.footer{
+  background-color: $light-bg;
+
+  .box-container{
+    @include grid(25rem);
+
+    .box{
+
+      h3{
+        @include title-text(2.2rem);
+        padding-bottom: 2rem;
+        padding-top: 1rem;
+      }
+
+      .link{
+        display: block;
+        color: $light-color;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+
+        i{
+          color: $blue;
+          padding-right: .5rem;
+        }
+
+        &:hover{
+          color: $blue;
+
+          i{
+            padding-right: 2rem;
+          }
+        }
+      }
+
+      .email{
+        width: 100%;
+        padding: 1.2rem 1.4rem;
+        border: $border;
+        color: $white;
+        margin: 1rem 0;
+        background: none;
+        font-size: 1.6rem;
+      }
+
+      .share{
+        margin-top: 2rem;
+
+        a{
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: 4.5rem;
+          font-size: 2rem;
+          background-color: $white;
+          color: $black;
+          margin-right: .5rem;
+          text-align: center;
+
+          &:hover{
+            background-color: $blue;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .credit{
+    text-align: center;
+    @include title-text(2rem);
+    padding-top: 2rem;
+    margin-top: 3rem;
+    border-top: $border;
+
+    span{
+      color: $blue;
     }
   }
 }
