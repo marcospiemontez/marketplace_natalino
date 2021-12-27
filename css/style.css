@@ -41,6 +41,22 @@ section {
   padding: 3rem 9%;
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  background: #0097e6;
+  color: #fff;
+  cursor: pointer;
+  font-style: italic;
+  font-size: 1.8rem;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -154,7 +170,7 @@ section {
 .home {
   position: relative;
   overflow: hidden;
-  min-height: 100vh;
+  height: 100vh;
   background: url(../images/home-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -236,7 +252,7 @@ section {
 }
 
 .home::before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -245,6 +261,53 @@ section {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#000));
   background: linear-gradient(transparent, #000);
   z-index: 12;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.about .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+
+.about .image img {
+  width: 100%;
+}
+
+.about .content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 42rem;
+          flex: 1 1 42rem;
+}
+
+.about .content span {
+  font-size: 2rem;
+  color: #0097e6;
+}
+
+.about .content h3 {
+  font-size: 3.5rem;
+  color: #fff;
+  text-transform: capitalize;
+  padding-top: 1.5rem;
+}
+
+.about .content p {
+  font-size: 1.6rem;
+  color: #aaa;
+  line-height: 2;
+  padding: 1.5rem 0;
 }
 
 body {
