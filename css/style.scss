@@ -160,7 +160,7 @@ section {
 }
 
 .home {
-  padding: relative;
+  position: relative;
   overflow: hidden;
   min-height: 100vh;
   background: url(../images/home-bg.jpg) no-repeat;
@@ -247,7 +247,7 @@ section {
 }
 
 body{
-    height: 500rem;
+    height: 300rem;
 }
 
 // media queries
